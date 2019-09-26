@@ -5,3 +5,32 @@ html {
     -o-background-size: cover;
     background-size: cover;
 }
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+h1 {
+    padding-right: 100px;
+    text-align: end;
+} 
+
+h2 {
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+img {
+    max-width: 180px;
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+    background: white;
+}
+.image{
+    position: relative;
+}
+.tag {
+    position: absolute;
+     
+    
+}
