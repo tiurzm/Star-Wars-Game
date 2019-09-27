@@ -4,6 +4,7 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: static;
 }
 body {
     margin: 0;
@@ -15,9 +16,10 @@ h1 {
     text-align: end;
 } 
 
-h2 {
+h3 {
     padding-left: 10px;
     margin-top: 0; 
+    margin-bottom: 10px;
 }
 
 p {
@@ -42,10 +44,13 @@ button {
     margin-left: 15px;
 }
 
+.image:hover {
+    background:white;
+}
+
 .image img {
     width: 100%;
     max-width: 150px;
-
 }
 
 .tag {
@@ -58,7 +63,7 @@ button {
     position: absolute;
     margin: 0;
     right: 10px;
-    bottom: 3px;
+    bottom: 1px;
 }
 
 .clear {
@@ -67,6 +72,5 @@ button {
 
 .game {
     margin-left: 15px;
-    margin-top: 10px;
 }
 
