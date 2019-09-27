@@ -17,16 +17,14 @@ h1 {
 } 
 
 h3 {
-    padding-left: 10px;
+    padding-left: 15px;
     margin-top: 0; 
     margin-bottom: 10px;
 }
 
-p {
-    margin: 0
-}
 button {
-    font-size: 13px;
+    font-size: 15px;
+    margin-left: 15px;
 }
 
 .container {
@@ -35,20 +33,21 @@ button {
     height: auto;
 }
 
-.image {
+.style {
     position: relative;
     max-width: 170px;
     float: left;
     border: 1px solid grey;
     padding: 23px 10px 15px;
     margin-left: 15px;
+    overflow: auto;
 }
 
-.image:hover {
+.style:hover {
     background:white;
 }
 
-.image img {
+.style img {
     width: 100%;
     max-width: 150px;
 }
@@ -70,7 +69,10 @@ button {
     clear: both;
 }
 
-.game {
-    margin-left: 15px;
-}
 
+@media screen and (max-width: 400px){
+   .style:nth-child(3n) {
+      border: 2px solid red;
+      margin-left: 11px;
+   }
+}
