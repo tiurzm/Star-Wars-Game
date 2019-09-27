@@ -69,10 +69,3 @@ button {
     clear: both;
 }
 
-
-@media screen and (max-width: 400px){
-   .style:nth-child(3n) {
-      border: 2px solid red;
-      margin-left: 11px;
-   }
-}
