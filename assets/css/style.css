@@ -1,5 +1,5 @@
 html { 
-    background: url(../images/ar.jpg) no-repeat center center fixed; 
+    background: url(../images/ww.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -7,17 +7,24 @@ html {
 }
 body {
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
 }
 h1 {
-    padding-right: 100px;
+    margin-bottom: 0;
+    padding-right: 50px;
     text-align: end;
-    color: white;
 } 
 
 h2 {
-    color: white;
     padding-left: 10px;
+    margin-top: 0; 
+}
+
+p {
+    margin: 0
+}
+button {
+    font-size: 13px;
 }
 
 .container {
@@ -28,29 +35,38 @@ h2 {
 
 .image {
     position: relative;
-    margin-right: 20px;
     max-width: 170px;
     float: left;
-    background: white;
-    padding: 20px 10px;
+    border: 1px solid grey;
+    padding: 23px 10px 15px;
+    margin-left: 15px;
 }
 
 .image img {
     width: 100%;
     max-width: 150px;
-   
+
 }
 
 .tag {
     position: absolute;
-    left:45px;
-    top: 3px;
+    top: 0;
     margin: 0;
 
 }
 .score {
     position: absolute;
     margin: 0;
-    left: 80px;
+    right: 10px;
+    bottom: 3px;
+}
+
+.clear {
+    clear: both;
+}
+
+.game {
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
