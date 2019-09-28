@@ -25,6 +25,7 @@ h3 {
 button {
     font-size: 15px;
     margin-left: 15px;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -38,7 +39,7 @@ button {
     max-width: 170px;
     float: left;
     border: 1px solid grey;
-    padding: 23px 10px 15px;
+    padding: 23px 10px 18px;
     margin-left: 15px;
     overflow: auto;
 }
