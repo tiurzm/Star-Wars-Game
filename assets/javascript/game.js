@@ -1,9 +1,27 @@
 $(document).ready(function(){
     var counter = 0; 
-    var obi = 120;
-    var luke = 100;
-    var sidious = 150;
-    var maul = 180; 
+
+    var characters = {
+        obi: {
+            hitPoints: 120,
+            attackPoints: 8,
+        },
+        luke: {
+            hitPoints: 100,
+            attackPoints: 5,
+        },
+        sidious: {
+            hitPoints: 150,
+            attackPoints: 20,
+        },
+        maul: {
+            hitPoints: 180,
+            attackPoints: 25,
+        }
+    }
+    console.log(characters);
+   
+
     // choose a character
     $(".image").on("click", function(){
         $(".image").off("click");
@@ -28,6 +46,11 @@ $(document).ready(function(){
                 newH.addClass("clear");
                 newH.html("You attacked " + text + " for" + " demage"+ "<br>" + text + " attacked you back for" + " demage" + "</br>");
                 $(".defender").append(newH);
+                // attack
+                $(".attack").on("click", function(){
+                    alert("hei");
+              
+                }); 
             }); 
         });
 
