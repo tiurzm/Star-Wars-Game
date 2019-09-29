@@ -1,5 +1,5 @@
 html { 
-    background: url(../images/ww.jpg) no-repeat center center fixed; 
+    background: url(../images/sw.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -14,12 +14,14 @@ h1 {
     margin-bottom: 0;
     padding-right: 50px;
     text-align: end;
+    color: white;
 } 
 
 h3 {
     padding-left: 15px;
     margin-top: 0; 
     margin-bottom: 10px;
+    color: white;
 }
 
 button {
