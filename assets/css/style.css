@@ -51,7 +51,7 @@ button {
 
 .style img {
     width: 100%;
-    max-width: 125px;
+    max-width: 150px;
 }
 
 .tag {
@@ -70,4 +70,12 @@ button {
 .clear {
     clear: both;
 }
+
+@media screen and (max-width: 640px){
+    .style img {
+        max-width: 125px;
+    }
+}
+
+
 
