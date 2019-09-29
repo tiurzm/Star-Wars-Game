@@ -77,5 +77,11 @@ button {
     }
 }
 
+@media screen and (max-width: 360px){
+    .style img {
+        max-width: 125px;
+    }
+}
+
 
 
