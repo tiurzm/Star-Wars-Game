@@ -1,19 +1,33 @@
 $(document).ready(function(){
-    var characters = {
-        obi: {hitPoints: 120, attackPoints: 8},
-        luke: {hitPoints: 100,attackPoints: 5},
-        sidious: {hitPoints: 150, attackPoints: 20},
-        maul: {hitPoints: 180,attackPoints: 25}
+    var characters = [
+        {name:"obi", hitPoints: 120, attackPoints: 8},
+        {name: "luke", hitPoints: 100,attackPoints: 5},
+        {name: "sidious", hitPoints: 150, attackPoints: 20},
+        {name: "maul", hitPoints: 180,attackPoints: 25}
+    ]
+    
+    var attacker = "obi";
+    var defender = "luke";
+    var attackerHitPoint = function () {
+        for (var i = 0; i < characters.length; i++) {
+            if (attacker === characters[i].name) {
+              console.log("hit point " + characters[i].attackPoints);
+              return characters[i].attackPoints;
+            }
+          }
     }
-
-    var attacker= "obi";
-    for (var i = 0; i < characters.length; i++){
-        if (attacker === characters[i]) {
-            alert("hai");
-        }
+    var defenderAttackPoint = function () {
+        for (var i = 0; i < characters.length; i++) {
+            if (defender === characters[i].name) {
+              console.log("hit point " + characters[i].attackPoints);
+              return characters[i].attackPoints;
+            }
+          }
     }
-
-    $(".image").attr(characters);
+  
+    var attackPointToDefender = attackerHitPoint();
+    var counterAttackByDefender = defenderAttackPoint();
+    
 
     // choose a character
     $(".image").on("click", function(){
@@ -37,8 +51,10 @@ $(document).ready(function(){
             $(".attack").on("click", function(){
                 var newH = $("<h3>");
                 var text = $(".defender .tag").text();
+                var point1 = attackPointToDefender;
+                var point2 = counterAttackByDefender;
                 newH.addClass("clear");
-                newH.html("You attacked " + text + " for " + " demage"+ "<br>" + text + " attacked you back for" + " demage" + "</br>");
+                newH.html("You attacked " + text + " for " + point1 + " demage"+ "<br>" + text + " attacked you back for " + point2 + " demage" + "</br>");
                 $(".defender").append(newH);
 
                 // attack
