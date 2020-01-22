@@ -4,75 +4,45 @@ html {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    position: static;
 }
 body {
     margin: 0;
     font-family: 'Be Vietnam', sans-serif;
-}
-h1 {
-    margin-bottom: 0;
-    padding-right: 50px;
-    text-align: end;
     color: white;
-} 
-
-h3 {
-    padding-left: 15px;
-    margin-top: 0; 
-    margin-bottom: 10px;
-    color: white;
+    font-size: 20px;
 }
 
 button {
-    font-size: 15px;
-    margin-left: 15px;
-    margin-bottom: 10px;
+    border: 1px solid black;
+    font-size: 17px;
 }
 
-.container {
-    width: 100%;
-    overflow: auto;
-    height: auto;
+h1 {
+    margin-bottom: 0;
+    padding-right: 10px;
+    text-align: end;
+    color: white;
 }
 
-.style {
-    position: relative;
-    float: left;
-    border: 1px solid grey;
-    padding: 23px 10px 18px;
-    margin-left: 15px;
-    overflow: auto;
-}
-
-.style:hover {
-    background:white;
-}
-
-.style img {
+img {
     width: 100%;
     max-width: 150px;
 }
-
-.tag {
-    position: absolute;
-    top: 0;
-    margin: 0;
-
-}
-.score {
-    position: absolute;
-    margin: 0;
-    right: 10px;
-    bottom: 1px;
+.character {
+    display: inline-block;
+    cursor: pointer;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 17px;
+    margin-right: 20px;
 }
 
-.clear {
-    clear: both;
+.character:hover {
+    background:white;
+    color: black;
 }
 
-@media screen and (max-width: 640px){
-    .style img {
-        max-width: 125px;
-    }
-}
+.character-health {
+    text-align: right;
+  }
