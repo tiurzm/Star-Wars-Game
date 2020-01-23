@@ -10,4 +10,4 @@ This is a Star Wars Game application, built using HTML, CSS and jQuery.
 2. Choose your character.
 3. Choose enemy character.
 4. Click Attack button to attack your enemy.
-5. You are able to play again if you win.
+5. You are able to play again if you win by click Restart button or choose your enemy again.
